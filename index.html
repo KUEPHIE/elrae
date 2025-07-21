@@ -3,35 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
+  <title>ELRAE</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #0f0f0f;
-      color: #f5f5f5;
-      line-height: 1.6;
+      color: #FFFFFF;
     }
     header {
       background-color: #1a1a1a;
       padding: 2rem;
       text-align: center;
     }
+    header img {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
     header h1 {
       font-size: 3rem;
       letter-spacing: 4px;
-    }
-    section {
-      padding: 2rem 10%;
-    }
-    .highlight {
-      font-style: italic;
-      color: #ccc;
+      margin: 0;
     }
     .motto {
       font-size: 1.2rem;
       margin-top: 1rem;
       color: #999;
+    }
+    section {
+      padding: 2rem 10%;
+      line-height: 1.6;
+    }
+    .highlight {
+      font-style: italic;
+      color: #ccc;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .product {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      height: 240px;
+      object-fit: cover;
+      background: #333;
+    }
+    .product h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+    }
+    .product p {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+    .product a {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.5rem 1rem;
+      color: #fff;
+      background-color: #333;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .product a:hover {
+      background-color: #555;
     }
     footer {
       background: #1a1a1a;
@@ -44,7 +90,9 @@
 </head>
 <body>
   <header>
+    <img src="elrae.jpg" alt="Logo ELRAE" />
     <h1>ELRAE</h1>
+    <p class="motto">Kami tidak menjual pakaian. Kami membebaskan pandangan.</p>
     <p class="motto">Elegance Meets Expression</p>
   </header>
 
@@ -55,18 +103,42 @@
       Mata dalam desain kami sering kali tertutup kain bukan karena tidak bisa melihat, tapi karena terlalu banyak hal yang membuat kita memilih untuk tidak melihat. Kain itu adalah simbol dari tuntutan sosial, ekspektasi orang lain, dan suara-suara di luar diri kita.
     </p>
     <p>
-      ELRAE hadir sebagai ruang untuk Untuk melihat bukan hanya dengan mata, tapi dengan hati dan kesadaran.
+      ELRAE hadir sebagai ruang untuk menyibak kain itu. Untuk melihat, bukan hanya dengan mata, tapi dengan hati dan kesadaran.
     </p>
   </section>
 
   <section>
     <h2>Kisah Kami</h2>
     <p>
-      Di dunia yang sibuk menyuruh kita tampil sempurna, ELRAE memilih diam. Diam untuk mendengar. Diam untuk mengerti. Kami bukan sekadar brand, kami adalah cara pandang. Setiap desain kami adalah pertanyaan: <span class="highlight">siapa disaat dirimu saat tak ada yang menilai?</span>
+      Di dunia yang sibuk menyuruh kita tampil sempurna, ELRAE memilih diam. Diam untuk mendengar. Diam untuk mengerti. Kami bukan sekadar brand, kami adalah cara pandang. Setiap desain kami adalah pertanyaan: <span class="highlight">siapa dirimu saat tak ada yang menilai?</span>
     </p>
     <p>
       Kami percaya, ada kekuatan dalam keheningan. Ada kejujuran dalam hal-hal yang tersembunyi. Dan lewat ELRAE, kami ingin mengingatkanmu akan itu.
     </p>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-bottom: 2rem;">Katalog Produk</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400?text=Produk+1" alt="Produk 1" />
+        <h3>Kaos 'Blind Truth'</h3>
+        <p>Kaos dengan ilustrasi mata tertutup kain hitam — simbol kebebasan dari penilaian luar.</p>
+        <a href="#">Lihat Detail</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400?text=Produk+2" alt="Produk 2" />
+        <h3>Hoodie 'Inner Vision'</h3>
+        <p>Hoodie gelap dengan simbol mata tersembunyi — nyaman dan penuh makna.</p>
+        <a href="#">Lihat Detail</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400?text=Produk+3" alt="Produk 3" />
+        <h3>Tote Bag 'Silent Gaze'</h3>
+        <p>Tas kain premium untuk membawa pesan keheningan dan ekspresi diri.</p>
+        <a href="#">Lihat Detail</a>
+      </div>
+    </div>
   </section>
 
   <footer>
